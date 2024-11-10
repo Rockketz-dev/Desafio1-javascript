@@ -14,15 +14,15 @@ const mostrarPrecioFinal = document.querySelector("#precioFinal");
 
 botonMas.addEventListener("click", () => {
   cantidad += 1;
-  mostrarCantidad.textContent = cantidad;
-  mostrarPrecioFinal.textContent = cantidad * precio;
+  mostrarCantidad.innerHTML = cantidad;
+  mostrarPrecioFinal.innerHTML = cantidad * precio;
 });
 
 botonMenos.addEventListener("click", () => {
   if (cantidad > 0) {
     cantidad -= 1;
-    mostrarCantidad.textContent = cantidad;
-    mostrarPrecioFinal.textContent = cantidad * precio;
+    mostrarCantidad.innerHTML = cantidad;
+    mostrarPrecioFinal.innerHTML = cantidad * precio;
   }
 });
 
