@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css" />
+    <script
+      src="https://kit.fontawesome.com/0d1649e436.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="hero">
+      <h4>
+        Hola <span class="nombre-usr"> </span>, Bienvenido a FurStore
+        <i class="fa-regular fa-hand-peace"></i>
+      </h4>
+    </div>
+    <div class="container">
+      <section>
+        <div class="card">
+          <i class="fa-solid fa-paw"></i>
+          <div class="img-card"></div>
+          <h6>Laptop Gamer AMD</h6>
+          <hr />
+          <p>Precio base: $<span class="precio-inicial"></span></p>
+          <p>
+            <i class="fa-solid fa-cart-plus"></i> Cantidad:
+            <span id="cantidad">0</span>
+            <button id="mas">+</button>
+            <button id="menos">-</button>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="total-section">
+          <i class="fa-regular fa-credit-card"></i>
+          <p>Total a pagar: $<span id="precioFinal"></span></p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p><i class="fa-solid fa-paw"></i> FurStore - 2024</p>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
